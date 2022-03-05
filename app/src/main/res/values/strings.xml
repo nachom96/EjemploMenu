@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">EjemploMenu</string>
     <string name="main_mnuAbout">About</string>
+    <string name="photo_mnuAdd">add</string>
+    <string name="photo_mnuSave">save</string>
+    <string name="main_mnuSettings">Settings</string>
 </resources>

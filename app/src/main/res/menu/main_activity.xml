@@ -3,12 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/mnuAbout"
-        android:title="@string/main_mnuAbout"
-        android:icon="@drawable/ic_baseline_person_24"
-        app:showAsAction="ifRoom|withText"
-        android:iconTint="@color/white"
-
-        />
+        android:id="@+id/mnuSettings"
+        android:orderInCategory="200"
+        android:title="@string/main_mnuSettings"
+        app:showAsAction="never" />
 
 </menu>
