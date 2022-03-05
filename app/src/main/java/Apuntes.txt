@@ -1,0 +1,1 @@
+1- Crear menú: Click derecho en res, new android resource file -> resource type -> menú
