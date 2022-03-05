@@ -4,4 +4,5 @@
     <string name="photo_mnuAdd">add</string>
     <string name="photo_mnuSave">save</string>
     <string name="main_mnuSettings">Settings</string>
+    <string name="photo_mnuInfo">Info</string>
 </resources>

@@ -1,13 +1,14 @@
 package com.example.ejemplomenu.ui.photo
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.commit
 import com.example.ejemplomenu.R
 import com.example.ejemplomenu.databinding.PhotoFragmentBinding
+import com.example.ejemplomenu.ui.info.InfoFragment
 
 class PhotoFragment : Fragment(R.layout.photo_fragment) {
 
@@ -39,21 +40,20 @@ class PhotoFragment : Fragment(R.layout.photo_fragment) {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
-            R.id.mnuAdd -> addAlgo()
-            R.id.mnuSave -> saveAlgo()
+            R.id.mnuInfo -> navigateToInfo()
             else -> return super.onOptionsItemSelected(item)
         }
         return true;
 
     }
 
-    private fun addAlgo() {
-        Toast.makeText(context, "Add", Toast.LENGTH_SHORT).show()
+    private fun navigateToInfo() {
+        requireActivity().supportFragmentManager.commit {
+            replace(R.id.fcContent, InfoFragment.newInstance())
+            addToBackStack("")
+        }
     }
 
-    private fun saveAlgo() {
-        Toast.makeText(context, "Save", Toast.LENGTH_SHORT).show()
-    }
 
     private fun setupViews() {
 

@@ -1,1 +1,3 @@
 1- Crear menú: Click derecho en res, new android resource file -> resource type -> menú
+
+2- Añadir imagen vector: Drawable -> New -> Image Vector
