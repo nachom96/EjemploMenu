@@ -6,6 +6,7 @@
     tools:context=".ui.photo.PhotoFragment">
 
     <TextView
+        android:id="@+id/lblPhoto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Photo" />

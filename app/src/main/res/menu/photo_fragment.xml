@@ -10,5 +10,12 @@
 
         app:showAsAction="ifRoom|withText" />
 
+    <item
+        android:id="@+id/mnuVisible"
+        android:checkable="true"
+        android:title="@string/main_mnuVisible"
+        app:showAsAction="never"
+        />
+
 </menu>
 
