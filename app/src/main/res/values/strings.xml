@@ -9,4 +9,12 @@
     <string name="photo_mnuDelete">Delete</string>
     <string name="photo_mnuEdit">Edit</string>
     <string name="photo_mnuActions">Actions</string>
+    <string name="photo_mnuEffect">Efecto</string>
+    <string name="photo_mnuOriginal">Original</string>
+    <string name="photo_mnuGrey">Gris</string>
+    <string name="photo_mnuSepia">Sepia</string>
+    <string name="photo_mnuBinary">Binario</string>
+    <string name="photo_mnuInverted">Invertido</string>
+    <string name="info_title">Info</string>
+    <string name="photo_title">Photo</string>
 </resources>

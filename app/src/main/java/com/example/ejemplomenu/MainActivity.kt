@@ -43,4 +43,9 @@ class MainActivity : AppCompatActivity() {
     private fun navigateToSettings() {
         Toast.makeText(this, "Navegar a Settings", Toast.LENGTH_SHORT).show()
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

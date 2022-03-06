@@ -3,6 +3,7 @@ package com.example.ejemplomenu.ui.photo
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.commit
@@ -32,7 +33,7 @@ class PhotoFragment : Fragment(R.layout.photo_fragment) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = PhotoFragmentBinding.bind(requireView())
-        setupViews()
+        setupAppBar()
         observeViewModel()
     }
 
@@ -80,8 +81,12 @@ class PhotoFragment : Fragment(R.layout.photo_fragment) {
     }
 
 
-    private fun setupViews() {
-
+    private fun setupAppBar() {
+        (requireActivity() as AppCompatActivity).supportActionBar?.run {
+            // Si estoy en el fragmento principal, no muestro el botón de atrás
+            setDisplayHomeAsUpEnabled(false)
+            setTitle(R.string.photo_title)
+        }
     }
 
 }

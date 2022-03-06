@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.viewModels
 import com.example.ejemplomenu.R
 
 class InfoFragment : Fragment() {
@@ -14,7 +16,7 @@ class InfoFragment : Fragment() {
         fun newInstance() = InfoFragment()
     }
 
-    private lateinit var viewModel: InfoViewModel
+    private val viewModel: InfoViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,8 +27,16 @@ class InfoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(InfoViewModel::class.java)
-        // TODO: Use the ViewModel
+        setupAppBar()
     }
+
+    private fun setupAppBar() {
+        (requireActivity() as AppCompatActivity).supportActionBar?.run {
+            setDisplayHomeAsUpEnabled(true)
+            setTitle(R.string.info_title)
+        }
+    }
+
+
 
 }
