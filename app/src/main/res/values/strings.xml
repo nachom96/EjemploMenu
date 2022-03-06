@@ -6,4 +6,7 @@
     <string name="main_mnuSettings">Settings</string>
     <string name="photo_mnuInfo">Info</string>
     <string name="main_mnuVisible">Visible</string>
+    <string name="photo_mnuDelete">Delete</string>
+    <string name="photo_mnuEdit">Edit</string>
+    <string name="photo_mnuActions">Actions</string>
 </resources>

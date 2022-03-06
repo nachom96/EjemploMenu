@@ -57,9 +57,19 @@ class PhotoFragment : Fragment(R.layout.photo_fragment) {
         when (item.itemId){
             R.id.mnuInfo -> navigateToInfo()
             R.id.mnuVisible -> viewModel.toggleVisibility()
+            R.id.mnuEdit -> edit()
+            R.id.mnuDelete -> delete()
             else -> return super.onOptionsItemSelected(item)
         }
         return true;
+    }
+
+    private fun edit() {
+        Toast.makeText(requireContext(), "Edit", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun delete() {
+        Toast.makeText(requireContext(), "Delete", Toast.LENGTH_SHORT).show()
     }
 
     private fun navigateToInfo() {

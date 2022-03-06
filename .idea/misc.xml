@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nacho/AndroidStudioProjects/EjemploMenu/app/src/main/res/drawable/ic_add_black_24.xml" value="0.2953703703703704" />
+        <entry key="..\:/Users/Nacho/AndroidStudioProjects/EjemploMenu/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2953703703703704" />
+        <entry key="..\:/Users/Nacho/AndroidStudioProjects/EjemploMenu/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2953703703703704" />
         <entry key="..\:/Users/Nacho/AndroidStudioProjects/EjemploMenu/app/src/main/res/layout/info_fragment.xml" value="0.20531526836894215" />
         <entry key="..\:/Users/Nacho/AndroidStudioProjects/EjemploMenu/app/src/main/res/layout/main_activity.xml" value="0.2622798887859129" />
         <entry key="..\:/Users/Nacho/AndroidStudioProjects/EjemploMenu/app/src/main/res/menu/main_activity.xml" value="0.5495145631067961" />
