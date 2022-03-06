@@ -7,15 +7,19 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.fragment.app.commit
 import com.example.ejemplomenu.R
+import com.example.ejemplomenu.databinding.MainActivityBinding
 import com.example.ejemplomenu.ui.photo.PhotoFragment
 
 class MainActivity : AppCompatActivity() {
 
-
+    private val binding: MainActivityBinding by lazy {
+        MainActivityBinding.inflate(layoutInflater)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
+        setContentView(binding.root)
+        setupAppBar()
         if (savedInstanceState == null){
             navigateToInitialDestination()
         }
@@ -47,5 +51,9 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    private fun setupAppBar() {
+        setSupportActionBar(binding.toolbar)
     }
 }
